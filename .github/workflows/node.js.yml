@@ -22,6 +22,6 @@ jobs:
           cache: "npm"
           cache-dependency-path: "**/package-lock.json"
       - run: cd app
-      - run: npm ci
+      - run: npm i
       - run: npm run finalBuild --if-present
       - run: npm run deploy
