@@ -26,4 +26,6 @@ jobs:
       - run: npm ci
         working-directory: ./app
       - run: npm run finalBuild --if-present
+        working-directory: ./app
       - run: npm run deploy
+        working-directory: ./app
