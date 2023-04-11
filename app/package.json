@@ -4,8 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
-    "finalBuild": "npm run build-transform-global && npm run build-sd && npm run build",
+    "build": "ng build --base-href=/dstokens/",
+    "finalBuild": "npm run build-transform-global && npm run build-sd && npm run build ",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "deploy": "ng deploy --base-href=/dstokens/",
