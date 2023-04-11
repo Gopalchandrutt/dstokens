@@ -22,7 +22,7 @@ jobs:
           node-version: "18"
           cache: "npm"
           cache-dependency-path: "**/package-lock.json"
-          github_access_token: ${{ secrets.GITHUB_TOKEN }
+          github_access_token: ${{ secrets.GITHUB_TOKEN }}
 
       - run: npm ci
         working-directory: ./app
