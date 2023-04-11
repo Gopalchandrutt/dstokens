@@ -22,6 +22,7 @@ StyleDictionaryPackage.registerTransform({
       "borderRadius",
       "borderWidth",
       "sizing",
+      "button",
     ].includes(prop.attributes.category);
   },
   transformer: function (prop) {

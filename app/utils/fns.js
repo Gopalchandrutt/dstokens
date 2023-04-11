@@ -20,6 +20,17 @@ function deepen(obj) {
   return result;
 }
 
+function flatIt(obj) {
+  const newObject = {};
+  for (const key in obj) {
+    for (const sKey in obj[key]) {
+      newObject[`${key}-${sKey}`] = obj[key][sKey];
+    }
+  }
+
+  return newObject;
+}
+
 function createArray({ dictionary, platform }) {
   const arr = dictionary.allTokens;
   return JSON.stringify(arr);
@@ -32,9 +43,8 @@ function filterTokensByType(type, tokens) {
     }
     return acc;
   }, {});
-
   const deep = deepen(obj);
   return deep;
 }
 
-module.exports = { createArray, filterTokensByType };
+module.exports = { createArray, filterTokensByType, flatIt };
