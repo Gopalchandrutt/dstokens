@@ -2,3 +2,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.primary-button {
+  @apply bg-button-primary-background text-button-primary-text rounded-md hover:bg-button-primary-hover-background active:bg-button-primary-active-background;
+  &.sm {
+    @apply h-button-sm px-button-padding-sm;
+  }
+  &.md {
+    @apply h-button-md px-button-padding-md;
+  }
+  &.lg {
+    @apply h-button-lg px-button-padding-lg;
+  }
+  &.xl {
+    @apply h-button-xl px-button-padding-lg;
+  }
+}

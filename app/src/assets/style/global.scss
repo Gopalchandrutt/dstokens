@@ -1,6 +1,4 @@
 .global-theme {
-  --white: #ffffff;
-  --black: #000000;
   --primary-100: #fff3e5;
   --primary-200: #ffdbb3;
   --primary-300: #ffc280;
@@ -10,7 +8,7 @@
   --primary-700: #b35d00;
   --primary-800: #804300;
   --primary-900: #4d2800;
-  --primary-primary: #ffa440;
+  --primary-default: #ffa440;
   --secondary-100: #fafafa;
   --secondary-200: #f5f5f5;
   --secondary-300: #eeeeee;
@@ -21,6 +19,8 @@
   --secondary-800: #616161;
   --secondary-900: #424242;
   --secondary-default: #212121;
+  --white: #ffffff;
+  --black: #000000;
   --red-100: #ffe4e4;
   --red-200: #ffbbbb;
   --red-300: #ff8989;
@@ -70,15 +70,26 @@
   --button-md: 40px;
   --button-lg: 50px;
   --button-xl: 80px;
-  --button-auto: NaNpx;
-  --icon-xs: 10;
-  --icon-sm: 12;
-  --icon-md: 18;
-  --icon-lg: 24;
-  --icon-xl: 32;
-  --border-radius-sm: 2px;
-  --pd-sm: 4;
-  --m-sm: 10;
+  --button-primary-background: #212121;
+  --button-primary-text: #ffffff;
+  --button-primary-hover-background: #424242;
+  --button-primary-active-background: #757575;
+  --button-disabled-background: #eeeeee;
+  --button-disabled-text: #bdbdbd;
+  --button-secondary-background: #ffffff;
+  --button-secondary-text: #212121;
+  --button-secondary-hover-background: #f5f5f5;
+  --button-secondary-active-background: #eeeeee;
+  --button-secondary-disabled-background: #eeeeee;
+  --button-secondary-disabled-text: #bdbdbd;
+  --button-padding-md: 16px;
+  --button-padding-sm: 12px;
+  --button-padding-lg: 16px;
+  --icon-xs: 10px;
+  --icon-sm: 12px;
+  --icon-md: 18px;
+  --icon-lg: 24px;
+  --icon-xl: 32px;
+  --border-radius-sm: 2;
   --border-sm: 1;
-  --inter: inter;
 }
